@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button Color 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <Text
+      style={
+        Object {
+          "color": "tomato",
+        }
+      }
+    >
+      Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Button default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <Text
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+    >
+      Button
+    </Text>
+  </View>
+</View>
+`;
