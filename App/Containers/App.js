@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
 import RootContainer from './RootContainer'
-import createStore from '../Redux';
+import createStore from '../Redux'
+import DebugConfig from '../Config/DebugConfig'
+import StorybookUI from '../../storybook'
 
 // create our store
-const store = createStore();
+const store = createStore()
 
 /**
  * Provides an entry point into our application.  Both index.ios.js and index.android.js
@@ -25,4 +27,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default DebugConfig.storybook ? StorybookUI : App

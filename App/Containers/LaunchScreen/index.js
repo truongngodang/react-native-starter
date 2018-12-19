@@ -5,27 +5,28 @@
  * @flow
  */
 
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 import {
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+  View
+} from 'react-native'
 
 import Button from '../../Components/Button'
 
 // Styles
-import styles from './LaunchScreen.style';
-
+import styles from './LaunchScreen.style'
 
 class LaunchScreen extends Component {
-  render() {
+  componentDidMount () {
+
+  }
+
+  render () {
     return (
       <View style={styles.container}>
-        <Button onPress={() => this.props.navigation.navigate('HomeScreen')}/>
+        <Button onPress={() => this.props.navigation.navigate('HomeScreen')} />
       </View>
-    );
+    )
   }
 }
 
-export default LaunchScreen;
+export default LaunchScreen
